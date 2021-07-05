@@ -1,0 +1,107 @@
+/*плавная загрузка страниц*/
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+ 
+header {
+  -webkit-animation: fade-in 1s linear; /* Safari 4+ */
+  -moz-animation: fade-in 1s linear; /* Fx 5+ */
+  -o-animation: fade-in 1s linear; /* Opera 12+ */
+  animation: fade-in 1s linear; /* IE 10+, Fx 29+ */
+}
+.color {
+  height:95px;
+  margin-bottom 20px;
+}
+.color.hex{
+  background-color:#41c5f3;
+}
+.content{
+   text-align:center;
+   font-size:50px; 
+}
+.logo-icon{
+  position:relative;
+  left:30px;
+  top:-55px;
+ /* bottom:100px;*/
+}
+.letter{
+  float:right;
+  margin: 0 1.5%;
+  cursor: pointer;
+ margin-right:30px;
+ /* top:-810px;*/
+ /* bottom:100px;*/
+}
+.bell{
+  float:right;
+  margin: 20 1.5%;
+  cursor: pointer;
+ /* margin-right:30px;*/
+  top:-810px;
+ /* bottom:100px;*/
+}
+.mistake{
+  display: grid;
+  grid-template-columns: 1200px;
+  grid-template-rows: 90px 90px 90px 90px;
+  justify-items: center;
+  }
+
+.smile {
+  grid-column: 1/1; 
+}
+.item1 {
+  grid-column: 1/2;
+  font-size:70px;
+}
+.item2 {
+  font-size:40px;
+}
+.item3 {
+  font-size:20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  float:right;
+  margin: 0 1%;
+  
+}
+.dropdown.bell{float:right;
+  margin: 1000 30%;
+  cursor: pointer;
+ /* margin-right:30px;*/
+  top:-810px;}
+
+.dropdown-child {
+    display: none;
+    background-color: grey;
+    min-width: 200px;
+}
+
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+/*.notification1{
+  position:absolute;
+   width:30px;
+   height:50px;
+margin-right:30px;
+}
+
+   div:nth-child(1) {
+   background-color:#228b22;
+   z-index:1;
+bottom:50;
+left:50;}*/
